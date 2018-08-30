@@ -11,9 +11,9 @@ Luckily FiveThirtyEight recently released a [massive corpus](https://github.com/
 ### Analysis + Results
 I took a few approaches to examining the data collected. One approach I took was to use Latent Dirichlet Association and look at the associated topics to get a sense of the structural makeup of these communities. The most interesting thing to note was that the topics for all the data combined was heavily dominated by troll tweets. Looking at the topics that came out of the Reddit data alone, there were several that would not come up at all in the combined data, including one apparently about healthcare typified by words like 'insurance' and 'preexisting' and one around the recent Republican tax bill typified by words like 'debt' and 'taxcuts'. The two groups shared topics about Trump and the Russian investigation (using surprisingly similar language like 'FBI', 'Russia', 'dossier', etc) and so unsurprisingly similar topics appeared in the combined data. However, most the other topics were clearly from the troll tweets such as few typified by words with cyrillic characters like 'что,' 'сша', and 'не.' There were some categories clearly related to the nature of Twitter typified by things like 'RT', 'Realdonaldtrump,' and 'blacklivesmatter.' The first to appear seemingly more rooted in the NeutralPolitics did not show up until the analysis was extend to 15 topics, and was clearly about net neutrality, typified by words like 'internet,' 'neutrality,' and 'isps.' 
 
-Additionally I ran Latent Semantic Analysis on the combined data set and came up with some pretty clearly defined categories as shown by the TSNE visualization below:
+Additionally I ran Latent Semantic Analysis on the combined data set and using DBScan came up with some pretty clearly defined categories as shown by the TSNE visualization below:
 
-![image](https://github.com/sgbroer/project_fletcher/tsne.png "TSNE projection of LSA")
+![tsne_image](https://github.com/sgbroer/project_fletcher/blob/master/tsne.png TSNE projection of DBScan clustered LSA)
 
 
 However, initial exploration into what exactly was being captured by this clustering didn't reveal any obvious commonalities within clusters, so that is certainly something I would like to investigate further.
