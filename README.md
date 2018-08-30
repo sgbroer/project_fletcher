@@ -13,7 +13,7 @@ I took a few approaches to examining the data collected. One approach I took was
 
 Additionally I ran Latent Semantic Analysis on the combined data set and using DBScan came up with some pretty clearly defined categories as shown by the TSNE visualization below:
 
-![tsne_image](https://github.com/sgbroer/project_fletcher/blob/master/tsne.png TSNE projection of DBScan clustered LSA)
+![image](https://github.com/sgbroer/project_fletcher/blob/master/tsne.png)
 
 
 However, initial exploration into what exactly was being captured by this clustering didn't reveal any obvious commonalities within clusters, so that is certainly something I would like to investigate further.
